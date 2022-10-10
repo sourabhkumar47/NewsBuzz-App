@@ -1,7 +1,7 @@
 package com.example.newsbuzz.data.model
 
 data class NewsDTO(
-    val articles: List<Article>,
+    val articleDTOS: List<ArticleDTO>,
     val status: String,
     val totalResults: Int
 )

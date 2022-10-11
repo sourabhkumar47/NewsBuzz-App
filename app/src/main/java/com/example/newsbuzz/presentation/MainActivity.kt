@@ -1,4 +1,4 @@
-package com.example.newsbuzz
+package com.example.newsbuzz.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

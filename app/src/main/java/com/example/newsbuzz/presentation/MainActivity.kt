@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    NewsBuzz {
+                    NewsBreeze {
                         HomeScreen()
                     }
                 }
@@ -33,6 +33,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun NewsBuzz(content: @Composable () -> Unit) {
+fun NewsBreeze(content: @Composable () -> Unit) {
     content()
 }

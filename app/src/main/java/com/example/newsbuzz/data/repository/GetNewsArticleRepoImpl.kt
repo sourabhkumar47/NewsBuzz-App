@@ -11,6 +11,6 @@ class GetNewsArticleRepoImpl @Inject constructor(private val apiService: ApiServ
     GetNewsArticleRepo , SafeApiRequest(){
     override suspend fun getNewsArticle(): List<Article> {
         val response = safeApiRequest { apiService.getNewsArticles() }
-        return response?.article?.toDomain()!!
+        return response?.articles?.toDomain()!!
     }
 }

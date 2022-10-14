@@ -47,8 +47,8 @@ fun HomeScreen(viewModel: NewsViewModel = hiltViewModel()) {
 
     }
 
-    header()
-    res.data?.let {
+
+    res.data?.let {header()
         LazyColumn {
             items(it) {
 

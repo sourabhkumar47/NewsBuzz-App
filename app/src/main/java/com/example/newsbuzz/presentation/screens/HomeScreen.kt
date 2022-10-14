@@ -76,6 +76,8 @@ fun ArticleItem(it: Article) {
 
         )
 
+        Spacer(modifier = Modifier.height(12.dp))
+
         Text(
             text = it.title, style = TextStyle(
                 color = Color.Gray,
@@ -94,6 +96,7 @@ fun ArticleItem(it: Article) {
                 fontSize = 17.sp
             )
         )
+
         Spacer(modifier = Modifier.height(12.dp))
 
         it.publishedAt?.let { it1 ->
@@ -102,21 +105,29 @@ fun ArticleItem(it: Article) {
                 style = TextStyle(
                     color = Color.Gray,
                     fontWeight = FontWeight.Normal,
-                    fontSize = 18.sp
+                    fontSize = 18.sp,
                 )
             )
         }
+
+        Spacer(modifier = Modifier.height(12.dp))
+
         Row(
             horizontalArrangement = Arrangement.spacedBy(10.dp),
             modifier = Modifier
-//                .fillMaxWidth()
                 .align(Alignment.CenterHorizontally)
         ) {
-            Button(onClick = { }) {
+            Button(onClick = { },
+                modifier = Modifier
+                    .clip(RoundedCornerShape(16.dp))
+            ) {
                 Text(text = "Read")
             }
 
-            Button(onClick = { }) {
+            Button(onClick = { },
+                modifier = Modifier
+                    .clip(RoundedCornerShape(16.dp))
+            ) {
                 Text(text = "Save")
             }
         }

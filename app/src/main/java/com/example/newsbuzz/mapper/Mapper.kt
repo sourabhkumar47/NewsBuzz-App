@@ -8,6 +8,7 @@ fun List<ArticleDTO>.toDomain():List<Article>{
     return map{
         Article(
             content = it.content?:"",
+            publishedAt = it.publishedAt?:"",
             description = it.description?:"",
             title = it.title?:"",
             urlToImage = it.urlToImage?:""

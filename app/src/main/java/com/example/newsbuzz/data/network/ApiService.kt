@@ -11,7 +11,7 @@ interface ApiService {
 
     @GET("top-headlines")
     suspend fun getNewsArticles(
-        @Query("country") country: String = "us",
+        @Query("country") country: String = "in",
         @Query("apiKey") apiKey:String="295a207929374e2ba1ffb86015ee1e7e"
     ):Response<NewsDTO>
 }
